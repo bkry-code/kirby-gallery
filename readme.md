@@ -1,6 +1,6 @@
 # Kirby Gallery
 
-A gallery plugin for [Kirby 2](http://getkirby.com) that uses [Zurb Foundation][1].
+A gallery plugin for [Kirby 2](http://getkirby.com) that uses [Zurb Foundation](http://foundation.zurb.com/).
 
 ## Installation
 1. Place gallery.php in your site/plugins directory.
@@ -28,6 +28,3 @@ If you are not already using Foundation, there are a couple additional steps:
 ## Usage
 
 Show a gallery on a page using `<?php echo getGallery($page, $galleryUri) ?>`
-
-
-[1](http://foundation.zurb.com/)
