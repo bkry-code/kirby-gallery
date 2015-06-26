@@ -27,4 +27,11 @@ If you are not already using Foundation, there are a couple additional steps:
 
 ## Usage
 
+Create a child page using the Gallery template and add images.
+
 Show a gallery on a page using `<?php echo getGallery($page, $galleryUri) ?>`
+
+Replace `$galleryUri` in the example above with the URI of the gallery page. 
+
+## To Do
+- create a Kirby Tag so that galleries can be added with `(gallery: uri)`.
