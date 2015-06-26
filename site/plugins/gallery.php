@@ -1,23 +1,5 @@
 <?php
 
-function getThumbImage($post) {
-
-  $thumbimage = (string)$post->coverimage();
-
-  if($thumbimage != "") {
-    $thumb = thumb($post->image($thumbimage), array( 'width'  => 690,
-                                                     'height' => 300,
-                                                     'crop'   => true,
-                                                     'blur'   => false ));
-    $img = brick('img');
-    $img->addClass('thumb');
-    $img->attr( 'src', $thumb->url());
-    $img->attr('alt', $post->title()->html());
-
-    return $img;
-  }
-}
-
 function getGalleryImageNames($page) {
   return str::split($page->galleryImages());
 }
