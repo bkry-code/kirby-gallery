@@ -2,7 +2,7 @@
 
 A gallery plugin for [Kirby 2](http://getkirby.com) that uses [Zurb Foundation][1].
 
-## Instillation
+## Installation
 1. Place gallery.php in your site/plugins directory.
 2. Place site/blueprints/gallery.php in your site/blueprints directory.
 
