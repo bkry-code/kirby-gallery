@@ -18,8 +18,8 @@ If you are not already using Foundation, there are a couple additional steps:
 ```
 4. In your snippets/footer.php include:
 ```html
-  <?php js("assets/js/vendor/jquery.js") ?>
-  <?php js("assets/js/foundation.min.js") ?>
+  <?php echo js("assets/js/vendor/jquery.js") ?>
+  <?php echo js("assets/js/foundation.min.js") ?>
   <script>
     $(document).foundation();
   </script>
