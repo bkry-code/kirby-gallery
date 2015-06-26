@@ -56,7 +56,7 @@ function assembleImages($page) {
     $attrs = array( 'class' => 'th', 'href' => $page->image($image)->url() );
     $a     = html::tag("a", $thumb, $attrs);
     $li    = brick("li");
-    if($cover) $li->addClass("clearing-featured-img");
+    if($cover && $key == 0) $li->addClass("clearing-featured-img");
     $li->html($a);
     array_push($listItems, $li->toString());
   }
@@ -66,7 +66,7 @@ function assembleImages($page) {
 function assembleGallery($page) {
   $ul     = brick("ul");
   $ul->addClass("gallery clearing-thumbs");
-  $ul->data("clearing");
+  $ul->data("clearing", " ");
   $ul->html(assembleImages($page));
   if(hasCoverImage($page)) $ul->addClass("clearing-feature");
   return $ul;
